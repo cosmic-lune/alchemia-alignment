@@ -145,9 +145,10 @@
   .problem p.copy{
     font-size:17.5px;
     color:var(--ink-soft);
-    max-width:640px;
-    margin:0 auto 30px;
-    line-height:2.05;
+    max-width:560px;
+    margin:0 auto 44px;
+    line-height:2.4;
+    letter-spacing:.02em;
   }
   .problem .signature-line{
     margin-top:56px;
@@ -178,6 +179,13 @@
     font-size:30px;
     line-height:1;
   }
+  .feature-icon{
+    width:56px; height:56px; border-radius:50%;
+    border:1px solid var(--gold-line);
+    background:var(--paper);
+    display:flex; align-items:center; justify-content:center;
+  }
+  .feature-icon svg{ width:28px; height:28px; stroke:var(--gold-deep); fill:none; stroke-width:1.1; }
   .feature h3{
     font-size:22px;
     color:var(--ink);
@@ -354,6 +362,9 @@
     content:"◇"; position:absolute; left:20px; top:20px;
     color:var(--gold-deep); font-size:15px;
   }
+  .checklist li strong{
+    color:var(--gold-deep); font-weight:600;
+  }
   @media(max-width:640px){ .checklist{ grid-template-columns:1fr; } }
 
   /* ---------- PROCESS (before/after) ---------- */
@@ -372,6 +383,14 @@
     box-shadow:0 0 0 4px var(--paper), 0 0 0 5px var(--gold-line);
   }
   .process-item h3{ font-size:23px; color:var(--ink); margin:0 0 20px; }
+  .process-icon{
+    width:52px; height:52px; border-radius:50%;
+    border:1px solid var(--gold-line);
+    background:var(--paper-2);
+    display:flex; align-items:center; justify-content:center;
+    margin-bottom:16px;
+  }
+  .process-icon svg{ width:26px; height:26px; stroke:var(--gold-deep); fill:none; stroke-width:1.1; }
   .ba-row{ display:flex; gap:16px; margin-bottom:14px; align-items:flex-start; }
   .ba-label{
     font-family:'Cormorant Garamond', serif; font-style:italic;
@@ -483,16 +502,20 @@
     <p class="copy">
       伝えたいものがある。届けたい人がいる。それなのに、
       いざ「売る」段階になると、なぜか力んでしまう。
-      断られるのが怖くて、少し引いてしまう。「タイミングでいいですよ」と、
-      自分から逃げ道を作ってしまう。
+    </p>
+    <p class="copy">
+      断られるのが怖くて、少し引いてしまう。
+      「タイミングでいいですよ」と、自分から逃げ道を作ってしまう。
     </p>
     <p class="copy">
       優しくて、繊細で、人の心を大切にできる人ほど、既存の「売り方」に苦しさを感じます。
       売り込みだと思われたくない。嫌われたくない。傷つきたくない。
     </p>
     <p class="copy">
-      でも、少し考えてみてください。マーケティングとは本来、
-      「その人が何を求めているか」をリサーチすること。
+      でも、少し考えてみましょう。<br>
+      マーケティングとは本来、「その人が何を求めているか」をリサーチすること。
+    </p>
+    <p class="copy">
       人の心の機微に敏感なあなたは、実はそれが一番得意な人のはずなのです。
       「集客が苦手」「クロージングが苦手」という前提そのものが、
       まだ書き換わっていないだけかもしれません。
@@ -500,6 +523,8 @@
     <p class="copy">
       そしてもうひとつ。AIがどれだけ発達しても、最後まで人間に残るのは、
       あなた固有の資質・才能・経験——つまり"あなた自身の価値"です。
+    </p>
+    <p class="copy">
       テクニックを磨くより先に、その価値の源泉に気づき、迷いなく差し出せる自分になること。
       それが、これからのビジネスの土台になります。
     </p>
@@ -515,12 +540,12 @@
       <h2>一つでも当てはまったら</h2>
     </div>
     <ul class="checklist">
-      <li>良いものを届けている自信はあるのに、なぜか売上が安定しない</li>
-      <li>集客やクロージングに、言葉にならない抵抗感がある</li>
-      <li>「売り込み」と思われるのが怖くて、つい遠慮してしまう</li>
-      <li>自分の資質や才能が何なのか、実はよく分かっていない</li>
-      <li>ひとりで発信し続けることに、限界を感じ始めている</li>
-      <li>AI時代に、自分にしかない価値をどう活かせばいいか知りたい</li>
+      <li>良いものを届けている自信はあるのに、なぜか<strong>売上が安定しない</strong></li>
+      <li>集客やクロージングに、<strong>言葉にならない抵抗感</strong>がある</li>
+      <li>「<strong>売り込み</strong>」と思われるのが怖くて、つい遠慮してしまう</li>
+      <li>自分の資質や才能が何なのか、実は<strong>よく分かっていない</strong></li>
+      <li>ひとりで発信し続けることに、<strong>限界を感じ始めている</strong></li>
+      <li>AI時代に、<strong>自分にしかない価値</strong>をどう活かせばいいか知りたい</li>
     </ul>
   </div>
 </section>
@@ -537,6 +562,7 @@
     <div class="process-track">
       <div class="process-item">
         <div class="process-dot"></div>
+        <div class="process-icon"><svg viewBox="0 0 24 24"><path d="M5 8c0 5 2.5 9 7 9s7-4 7-9"/><path d="M3 8h18"/><path d="M12 17v3"/><path d="M9 20h6"/></svg></div>
         <h3>器を開く</h3>
         <div class="ba-row before"><span class="ba-label">Before</span><span class="ba-text">頭では分かっていても、動けない。豊かさもチャンスも、素直に受け取れない。</span></div>
         <div class="ba-row after"><span class="ba-label">After</span><span class="ba-text">瞑想を通して顕在意識と潜在意識の抵抗が緩み、受け取れる自分になっている。</span></div>
@@ -544,6 +570,7 @@
 
       <div class="process-item">
         <div class="process-dot"></div>
+        <div class="process-icon"><svg viewBox="0 0 24 24"><path d="M12 21V10"/><path d="M12 10C12 6 9 4 5 4c0 4 2 7 7 6z"/><path d="M12 10c0-4 3-6 7-6 0 4-2 7-7 6z"/></svg></div>
         <h3>価値の源泉を掘り起こす</h3>
         <div class="ba-row before"><span class="ba-label">Before</span><span class="ba-text">自分の強みや才能が、実はよく分かっていない。</span></div>
         <div class="ba-row after"><span class="ba-label">After</span><span class="ba-text">対話を通してあなた固有の"好き"と資質が言語化され、自分の言葉で語れるようになる。</span></div>
@@ -551,6 +578,7 @@
 
       <div class="process-item">
         <div class="process-dot"></div>
+        <div class="process-icon"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="10" rx="7" ry="8.5"/><path d="M12 18.5V22"/><path d="M9 22h6"/></svg></div>
         <h3>集客からクロージングまでの詰まりを解く</h3>
         <div class="ba-row before"><span class="ba-label">Before</span><span class="ba-text">人を集めるのも、次の提案をするのも、なんとなく気が重い。</span></div>
         <div class="ba-row after"><span class="ba-label">After</span><span class="ba-text">相手の今の状態を映し出し、背中を押すという在り方に変わり、力まずに次の一歩を届けられる。</span></div>
@@ -558,6 +586,7 @@
 
       <div class="process-item">
         <div class="process-dot"></div>
+        <div class="process-icon"><svg viewBox="0 0 24 24"><circle cx="8" cy="8" r="3"/><circle cx="16" cy="8" r="3"/><circle cx="8" cy="16" r="3"/><circle cx="16" cy="16" r="3"/><path d="M8 11v2M16 11v2M11 8h2M11 16h2"/></svg></div>
         <h3>あなただけの動線として仕組み化する</h3>
         <div class="ba-row before"><span class="ba-label">Before</span><span class="ba-text">良いセッションを受けても、日常に戻ると忘れてしまう。</span></div>
         <div class="ba-row after"><span class="ba-label">After</span><span class="ba-text">あなた専用の記録として残り、迷ったときはいつでも見返せる"型"になっている。</span></div>
@@ -575,7 +604,7 @@
     </div>
 
     <div class="feature">
-      <div class="spark">✧</div>
+      <div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M3 13c2 4 5 6 9 6s7-2 9-6"/><path d="M3 13c1-1.5 2.5-2 4-1.5M21 13c-1-1.5-2.5-2-4-1.5"/><circle cx="12" cy="6" r="2.4"/></svg></div>
       <div>
         <h3>抵抗なく、豊かさを受け取れる自分になる</h3>
         <p>お金・豊かさを受け取り上手になる方法。器の大きさ以上には流れ込んでこないなら、まず器を育てる。</p>
@@ -583,7 +612,7 @@
     </div>
 
     <div class="feature">
-      <div class="spark">✧</div>
+      <div class="feature-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="2"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="10"/></svg></div>
       <div>
         <h3>人の心を読む力を、集客の武器に変える</h3>
         <p>新時代の集客とは。共鳴する人が自然に集まる、あなたらしい入り口のつくり方。</p>
@@ -591,7 +620,7 @@
     </div>
 
     <div class="feature">
-      <div class="spark">✧</div>
+      <div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M12 20c-4-3-8-6.5-8-11a4.5 4.5 0 0 1 8-2.7A4.5 4.5 0 0 1 20 9c0 4.5-4 8-8 11z"/></svg></div>
       <div>
         <h3>抵抗ゼロ、確信を持って背中を押せるようになる</h3>
         <p>クロージングとは最大の愛。詰めるのではなく、相手のミラーを変えていくという在り方。</p>
@@ -599,7 +628,7 @@
     </div>
 
     <div class="feature">
-      <div class="spark">✧</div>
+      <div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M3 8c2-2 4-2 6 0s4 2 6 0 4-2 6 0"/><path d="M3 14c2-2 4-2 6 0s4 2 6 0 4-2 6 0"/><path d="M3 20c2-2 4-2 6 0s4 2 6 0 4-2 6 0"/></svg></div>
       <div>
         <h3>力でなく、注ぎ、満ち、めぐらせるビジネスのかたち</h3>
         <p>女性性の在り方が主となるビジネス。これまでの型とは違う、新しいビジネスの在り方。</p>
@@ -607,7 +636,7 @@
     </div>
 
     <div class="feature">
-      <div class="spark">✧</div>
+      <div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M7 12c0-2.5 2-4 4-2s2 4.5 0 6.5-4 0.5-4-2-2-4.5-4-2.5 0 4.5 2 4.5"/><path d="M17 12c0-2.5-2-4-4-2"/></svg></div>
       <div>
         <h3>テクノロジーが発達するほど際立つ、あなた固有の価値</h3>
         <p>AI時代に"自分自身"を価値にする方法。誰にでも作れるものではなく、あなたにしか差し出せないもの。</p>
